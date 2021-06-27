@@ -1,0 +1,520 @@
+	*{
+	box-sizing: border-box;
+	position: relative;
+	}
+	html,body{
+	font-family: '微軟正黑體'arial;
+	}
+	h1,h2,h3,h4,h5,h6,p{
+	padding: 0;
+	margin: 0;
+	}
+	ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		left: 20px;
+    	bottom: 20px;
+	}
+	a{
+		text-decoration: none;
+		color: #d8a470;
+	}
+
+    /*lay out*/
+	
+	.wrapper{
+		line-height: 4;
+	}
+	.container{
+		width: 1200px;
+		margin: 0 auto;
+		height: 100%;
+		padding: 15px;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+
+	.row{
+		margin-left: -16px;
+		margin-right: -16px;
+	}
+
+	/*偽元素*/
+	.row:after{
+		content: '';
+		display: block;
+		clear: both;
+	}
+
+
+
+	.col-1-2,.col-1-3,.col-1-4{
+		float: left;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	.col-1-2{
+		width: 50%;
+	}
+
+	.col-1-3{
+		width: 45%;
+	}
+	.col-1-4{
+		width: 25%;
+	}
+
+
+	.hero{
+		padding-top: 200px;
+		padding-bottom: 200px;
+		background-color: #0c0404b3
+	}
+	.hero-bg-white{
+		background-color: #fefefe;
+	}
+	.hero-bg-gray{
+		background-color: #fefefee6;
+		
+		padding-top: 350px;
+		padding-bottom: 160px; 
+		background-position: top;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+
+	
+	/*NAVBAR*/
+	
+	.navbar{
+		
+		width:100%;
+		background-color: #a7a19b8f;
+		
+		
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 500;
+	}
+
+
+	
+
+	
+
+	.brand{
+		display: table-cell;
+		width: 164px;
+		height: 40px;
+		padding: 25px;
+		background-image: url('../images/common/kisspng-chanel-no-5-logo-fashion-clip-art-chanel-logo-png-clipart-5a7234a39ad031.7666310515174340196341.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: bottom;
+		right: 200px
+	}
+
+	.nav{
+		float: left;
+	}
+
+	.nav-item{
+		float: right;
+	}
+
+	.nav-link{
+		display: inline-block;
+		line-height: 24px;
+		padding:20px 25px;
+		color: #fefefe;
+		transition: all 0.5s;
+		font-size: larger;
+	}
+
+	.nav-link:hover{
+		color: #d5a26f;
+
+	}
+
+
+	/*jumpbotron*/
+	.jumpbotron{
+		padding-top: 224px;
+		padding-bottom: 160px; 
+		
+		background-image: url('../images/bg/jennie (2).jpg');
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+
+	.jumpbotron .logo-image{
+		width: 320px;
+		height: 320px;
+		margin: 0 auto;
+
+		background-image: url('../images/common/chanell.png'); 
+		background-position: center;
+		background-size: contain;
+	}
+
+	/*mask-dark*/
+	.mask-dark{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,0.5);
+	}
+
+	/*btn*/
+	.btn{
+		display: inline-block;
+		font-size: 16px;
+		line-height: 24px;
+		padding: 10px 20px;
+		border-radius: 6px;
+		transition: all 0.5s;
+		
+		/*background-color: black;
+		color: #fff;*/
+		margin-right: 12px;
+		margin-left: 12px;
+	}
+	.btn-center{
+		text-align: center;
+		padding: 25px;
+	}
+	.btn-lg{
+		padding: 8px 32px;
+	}
+	
+
+	.btn-primary{
+		border: 1px solid #d5a26f;
+		color: #fdfdfd;;
+		transition: all 0.5s;
+	}
+	.btn-primary:hover{
+		background-color: #b2875c;
+	}
+	.btn-secondary{
+		border: 1px solid #d5a26f;
+		color: #d5a26f;
+		transition: all 0.5s;
+	}
+	.btn-secondary:hover{
+		background-color: #d5a26f;
+		color: #fefefe;
+	}
+
+	/*自創*/
+	.btn-conmaty{
+		color: #636c75;
+		transition: all 0.5s;
+		border: 1px solid #333;
+
+	}
+	.btn-conmaty:hover{
+		background-color: #f5cbcb;
+	}
+
+
+	.btn-director{
+		color: #333;
+		transition: all 0.5s;
+	}
+
+	.btn-director:hover{
+		text-decoration: underline;
+	}
+
+
+
+
+    /*image-container*/
+
+	.image-container:before{
+		content:'';
+		display: block;
+		width: 100%;
+		padding-top: 75%;
+	}
+	
+	.image-container .image{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		top: 20px;
+		left: -100px;
+	}
+
+    /*about-preview*/
+	.about-preview .title{
+		background-color: #dbb28a85;
+		padding: 10px;
+		font-size: 32px;
+		color: #333;
+		
+		margin-bottom: 24px;
+	}
+
+	.about-preview .para{
+
+		font-size: 16px;
+		line-height: 25px;
+		color: #333;
+		margin-bottom: 24px;
+	}
+
+
+
+	/*section-intro*/
+    .section-intro{
+		text-align: center;
+		margin-bottom: 50px;
+	}
+	
+	.section-intro .title{
+		font-size: 65px;
+		color: #333;
+		margin-bottom: 5px;
+		color: #e2e2e2;
+	}
+	.section-intro .para{
+		font-size: 16px;
+		color: #333;
+		line-height: 35px;
+		font-size: larger;
+		bottom: 90px;
+		color: #cbcbcbbd;
+	}
+
+
+	/*service-item*/
+	.service-item .preview{
+		padding-top: 16px;
+	}
+	.service-item .title{
+		font-size: 24px;
+		margin-bottom: 8px;
+		color: #333;
+		
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.service-item .subtitle{
+		line-height: 20px;
+		font-size: 17px;
+		color: #f5cbcb;
+		margin-bottom: 16px;
+	}
+	.service-item .para{
+		font-size: 16px;
+		color: #333;
+		margin-bottom: 24px;
+		line-height: 10px;
+		height: 72px;
+		overflow: hidden;
+
+	}
+
+
+	/* reservation */
+	.reservation{
+	background-image: url(../images/bg/newyork.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+ 	}
+
+ 	.reservation .section-intro .title{
+	color: #fefefe;
+	}
+
+
+	.reservation .section-intro .para{
+	color: #fefefe;
+	}
+
+
+
+	/* menu-list */
+	.menu-list{
+	margin-bottom: 64px;
+	}
+
+	.menu-list .last-child{
+	margin-bottom: 0;
+	}
+
+	.menu-list .title-bar{
+	margin-bottom: 24px;
+	}
+
+	.menu-list .title-bar:after{
+	content: '';
+	display: block;
+	clear: both;
+	}
+
+	.menu-list .title-bar .title{
+	font-size: 24px;
+	line-height: 40px;
+	color: #d5a26f;
+	padding-left: 16px;
+	right: 110px;
+	}
+
+	.menu-list .title-bar .title:before{
+	content: '';
+	display: inline-block;
+	width: 4px;
+	height: 24px;
+	background-color: #d3d3d3;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translate(0,-50%);
+	}
+
+	.menu-list .title-bar .btn{
+	float: right;
+	padding-top: 70px;
+	padding-bottom: 8px;
+	}
+
+	.menu-list .list-item .image-container{
+	margin-bottom: 16px;
+	}
+
+	.menu-list .list-item .image-container:before{
+	padding-top: 100%;
+	}
+
+	.menu-list .list-item .title{
+	color: #333333;
+	font-size: 18px;
+	line-height: 24px;
+	margin-bottom: 8px;
+	}
+
+	.menu-list .list-item .subtitle{
+	color: #d3d3d3;
+	font-size: 20px;
+
+	}
+
+
+	/* contact */
+	.contact-info{
+	color: #fad7b4;
+	padding-top: 50px;
+	bottom: 80px;
+	}
+
+	.contact-info .info-item{
+	color: color: #636c75;
+	margin-bottom: 24px;
+	}
+
+	.contact-info .info-item .title{
+	margin-bottom: 16px;
+	font-size: 20px;
+	}
+
+	.contact-info .info-item .title span{
+	display: inline-block;
+	border-bottom: 2px solid #636c75;
+	line-height: 36px;
+	font-size: 20px;
+	}
+
+	.contact-info .info-item .info{
+	line-height: 32px;
+	font-size: 20px;
+	font-family: -webkit-pictograph;
+	}
+
+	.map-container{
+	width: 100%;
+	padding-top: 75%;
+	}
+
+	.map-container iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	}
+
+
+	/* footer */
+	.footer{
+	background-image: url('../images/common/Chanel-Spring-2021-Haute-Couture-fb.jpg');
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	}
+
+	.footer .brand{
+	width: 240px;
+	height: 240px;
+	display: block;
+	background-image: url('../images/common/chanell.png');
+	background-position: center;
+	background-size: contain;
+	margin: 0 auto;
+	left: 1px;
+}
+	}
+
+	.footer .nav{
+	display: flex;
+	justify-content: center;
+	}
+	
+	.footer .nav .nav-item .nav-link{
+	color: #fefefe;
+	padding: 70px;s
+	line-height: 70px;
+	transition: all 0.3s;
+	}
+
+	.footer .nav .nav-item .nav-link:hover{
+	color: #636c74;
+	}
+
+	.footer .copyright{
+	background-color: rgba(0,0,0,0.8);
+	color: #ddd;
+	text-align: center;
+	line-height: 24px;
+	padding: 16px 0;
+	font-size: 14px;
+	}
+
+	/*social-media*/
+	.social-media{
+		position: absolute;
+		right:30px;
+		bottom:30px;
+
+	}
+	.social-media li{
+		float: right;
+		margin-left:20px;
+	} 
+	.social-media img{
+		top: 20px;
+	}
